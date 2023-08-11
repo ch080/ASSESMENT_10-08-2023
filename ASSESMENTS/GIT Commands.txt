@@ -1,0 +1,33 @@
+Exercise 1
+mkdir git-example
+cd git-example
+git init
+git add Code.txt Output.txt
+git commit -m "Add Code.txt and Output.txt"
+git remote add origin https://github.com/<username>/<repository>.git
+git push -u origin master
+
+Exercise 2
+mkdir git-operations
+cd git-operations
+touch feature1.txt feature2.txt
+git init
+git add feature1.txt feature2.txt
+git commit -m "Initial commit"
+git branch develop
+git branch feature1
+git branch feature2
+git checkout develop
+touch develop.txt
+git add develop.txt
+git commit -m "Add develop.txt"
+git checkout feature1
+touch new.txt
+git add new.txt
+git commit -m "Add new.txt in feature1"
+git checkout develop
+touch demo.txt
+git add demo.txt
+git commit -m "Add demo.txt in develop"
+git checkout master
+
